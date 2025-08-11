@@ -200,7 +200,7 @@ sudo bash install.sh --uninstall
 
 ## License
 
-MIT (recommended). Add a `LICENSE` file if you choose MIT or another license.
+MIT
 
 ---
 
