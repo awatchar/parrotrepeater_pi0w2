@@ -161,13 +161,12 @@ sudo systemctl enable parrot.service
   arecord -l
   aplay -l
   source ~/parrot/venv/bin/activate
-  python - <<'PY'
-import sounddevice as sd; print(sd.query_devices())
-PY
+  python -c "import sounddevice as sd; print(sd.query_devices())"
   ```
-- **Device open errors**: re-select the correct indices in the Web UI.
-- **CTCSS not decoded**: increase `ctcss_amplitude` in small steps (`+0.005`).
-- **Clicks at start/end**: slightly increase pre/post beep durations; verify cabling/isolation.
+
+- **Device open errors**: re-select the correct indices in the Web UI.  
+- **CTCSS not decoded**: increase `ctcss_amplitude` in small steps (`+0.005`).  
+- **Clicks at start/end**: slightly increase pre/post beep durations; verify cabling/isolation.  
 - **High CPU** on Pi Zero 2W: keep `sample_rate=16000`, `frame_ms=20`.
 
 ---
@@ -175,7 +174,7 @@ PY
 ## Security
 
 - The Web UI runs on **port 8080**.  
-  Restrict access to your LAN or place behind a reverse proxy (Caddy/NGINX) with auth if exposed.
+  Restrict access to your LAN or place behind a reverse proxy (Caddy/NGINX) with auth if exposed.  
 - Sudoers rules are limited to **service control** and **reboot** only.
 
 ---
@@ -222,6 +221,6 @@ docs/
 ```
 Add screenshots to the paths above and reference them here:
 
-- Main UI: `![Main UI](docs/screenshots/webui-main.png)`
-- Interfaces: `![Interfaces](docs/screenshots/interfaces.png)`
-- Metrics: `![Metrics](docs/screenshots/metrics.png)`
+- Main UI: ![Main UI](docs/screenshots/webui-main.png)  
+- Interfaces: ![Interfaces](docs/screenshots/interfaces.png)  
+- Metrics: ![Metrics](docs/screenshots/metrics.png)
