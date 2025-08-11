@@ -219,8 +219,3 @@ docs/
     interfaces.png
     metrics.png
 ```
-Add screenshots to the paths above and reference them here:
-
-- Main UI: ![Main UI](docs/screenshots/webui-main.png)  
-- Interfaces: ![Interfaces](docs/screenshots/interfaces.png)  
-- Metrics: ![Metrics](docs/screenshots/metrics.png)
